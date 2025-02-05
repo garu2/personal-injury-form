@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Detect if we are on localhost or in production (Vercel)
   const BASE_URL = window.location.hostname.includes("localhost")
       ? "http://localhost:5000"
-      : "https://tu-proyecto.vercel.app";
+      : "https://personal-injury-form.vercel.app/";
 
   // Create the spinner (loading)
   const spinner = document.createElement("div");
