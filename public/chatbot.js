@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Detect if we are on localhost or in production (Vercel)
   const BASE_URL = window.location.hostname.includes("localhost")
       ? "http://localhost:5000"
-      : "https://personal-injury-form.vercel.app/";
+      : "https://personal-injury-form.vercel.app/api/chatbot";
 
   // Create the spinner (loading)
   const spinner = document.createElement("div");
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       spinner.style.display = "block";
 
       try {
-          let response = await fetch(`${BASE_URL}/chatbot`, {
+          let response = await fetch(BASE_URL, {
               method: "POST",
               headers: {
                   "Content-Type": "application/json"

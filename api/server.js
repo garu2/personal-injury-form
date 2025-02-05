@@ -19,7 +19,7 @@ app.use(express.json());
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
-app.post("/chatbot", async (req, res) => {
+app.post("/api/chatbot", async (req, res) => {
   const userMessage = req.body.message;
 
   if (!userMessage) {
