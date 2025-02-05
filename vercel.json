@@ -1,4 +1,7 @@
 {
+  "builds": [
+    { "src": "api/server.js", "use": "@vercel/node" }
+  ],
   "routes": [
     { "src": "/chatbot", "dest": "/api/server.js" }
   ]
