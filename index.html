@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Injury Questionnaire</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <h5>Claim Accident Compensation Now</h5>
+        <h1 id="dynamic-header">HOW MUCH WILL YOU GET IN YOUR STATE?</h1>
+        <strong>No Win, No Fee - Guaranteed!</strong>
+        <p>Time is limited to file your claim after an accident.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form id="injury-form">
+          <!-- Step 1 -->
+          <div class="form-step active">
+            <h2>What type of accident were you in? *</h2>
+            <label
+              ><input type="radio" name="accident-type" value="Car accident" />
+              Car accident</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accident-type"
+                value="Motorcycle accident"
+              />
+              Motorcycle accident</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accident-type"
+                value="Ride share accident"
+              />
+              Ride share accident</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accident-type"
+                value="Commercial vehicle accident"
+              />
+              Commercial vehicle accident</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accident-type"
+                value="Semi-truck accident"
+              />
+              Semi-truck accident</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accident-type"
+                value="Bicycle or pedestrian accident"
+              />
+              Bicycle or pedestrian accident</label
+            >
+            <label
+              ><input type="radio" name="accident-type" value="Dog bite" /> Dog
+              bite</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="accident-type"
+                value="Injury on commercial property"
+              />
+              Injury on commercial property</label
+            >
+            <div class="buttons">
+              <button type="button" class="next-btn">NEXT →</button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="form-step">
+            <h2>How were you hurt? *</h2>
+            <label
+              ><input
+                type="radio"
+                name="injury-type"
+                value="Fatality or Wrongful Death"
+              />
+              Fatality or Wrongful Death</label
+            >
+            <label
+              ><input type="radio" name="injury-type" value="Major Injury" />
+              Major Injury: Broken Bones, Fractures, Organ Damage,
+              Concussion</label
+            >
+            <label
+              ><input type="radio" name="injury-type" value="Moderate Injury" />
+              Moderate Injury: Neck or Back Pain, Sprains, Whiplash</label
+            >
+            <label
+              ><input
+                type="radio"
+                name="injury-type"
+                value="No Physical Injury"
+              />
+              No Physical Injury</label
+            >
+            <div class="buttons">
+              <button type="button" class="prev-btn">← PREV</button>
+              <button type="button" class="next-btn">NEXT →</button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="form-step">
+            <h2>Was the accident your fault? *</h2>
+            <label><input type="radio" name="fault" value="No" /> No</label>
+            <label><input type="radio" name="fault" value="Yes" /> Yes</label>
+            <div class="buttons">
+              <button type="button" class="prev-btn">← PREV</button>
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Trusted Form Certificate Display -->
+        <div id="trusted-form-section">
+          <p>
+            Trusted Form Certificate:
+            <a id="trusted-form-link" href="#" target="_blank">Pending...</a>
+          </p>
+        </div>
+
+        <!-- Chatbot -->
+        <div id="chatbot-container">
+          <p>Need help? Chat with our AI assistant:</p>
+          <button id="open-chatbot">Open Chat</button>
+          <div id="chat-window" style="display: none">
+            <div id="chat-messages"></div>
+            <input
+              type="text"
+              id="chat-input"
+              placeholder="Type a question..."
+            />
+            <button id="send-message">Send</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="chatbot.js"></script>
+    <!-- TrustedForm -->
+    <script type="text/javascript">
+      (function () {
+        var tf = document.createElement("script");
+        tf.type = "text/javascript";
+        tf.async = true;
+        tf.src =
+          ("https:" == document.location.protocol ? "https" : "http") +
+          "://api.trustedform.com/trustedform.js?field=xxTrustedFormCertUrl&ping_field=xxTrustedFormPingUrl&l=" +
+          new Date().getTime() +
+          Math.random();
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(tf, s);
+      })();
+    </script>
+    <noscript>
+      <img src="https://api.trustedform.com/ns.gif" />
+    </noscript>
+    <!-- End TrustedForm -->
+  </body>
+</html>

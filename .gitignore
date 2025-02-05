@@ -1,0 +1,5 @@
+
+api/.env
+
+api/node_modules/
+api/package-lock.json
