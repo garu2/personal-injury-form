@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
-
+const allowedOrigins = ["https://personal-injury-form.vercel.app/", "http://localhost:5500"];
 app.use(cors({
   origin: function (origin, callback) {
       if (!origin || allowedOrigins.includes(origin)) {
