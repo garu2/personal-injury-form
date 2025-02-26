@@ -3,7 +3,6 @@
 This project is an improved version of the **Personal Injury Compensation Questionnaire**.  
 It allows users to answer key questions about their accident, obtain a **TrustedForm Certificate**, and receive assistance from an **AI-powered chatbot**.
 
-🔗 **Live Demo:** [https://personal-injury-form.vercel.app](https://personal-injury-form.vercel.app)
 
 ---
 
